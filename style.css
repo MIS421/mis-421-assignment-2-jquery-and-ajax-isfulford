@@ -4,11 +4,19 @@ body {
     background-size: 100%;
 }
 
-#searchResults, #time{
+#searchResults, #time {
     visibility: hidden;
+    font-family: 'Century Gothic';
 }
 
 h1 {
-    font-family:'Century Gothic';
-    color: blue;
+    font-family: Georgia;
+    color: bisque;
+    text-shadow: 3px 0 0 saddlebrown;
+    text-align: center;
+}
+
+button {
+    position: relative;
+    font-family: 'Century Gothic';
 }

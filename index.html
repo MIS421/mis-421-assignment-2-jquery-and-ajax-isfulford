@@ -4,8 +4,9 @@
 
 <head>
 
-  <link rel="stylesheet" href="./style.css">
-  <title>Quest Request</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Quest Request</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha384-i61gTtaoovXtAbKjo903+O55Jkn2+RtzHtvNez+yI49HAASvznhe9sZyjaSHTau9" crossorigin="anonymous"></script>
 
 </head>
 
@@ -19,9 +20,9 @@
         <input type="button" id="currentTime" value="currentTime" />
     </div>
 
-    <input type="text" id="query"  />
+    <input type="text" id="query" />
     <div>
-        <button onclick="Search()" value="search" type="button">Search</button>
+        <button class="button" onclick="searchClick()" value="search" type="button">Search</button>
     </div>
     <div id="searchResults">sr</div>
     <div id="time">t</div>

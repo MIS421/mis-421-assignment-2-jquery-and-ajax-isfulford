@@ -1,6 +1,11 @@
 var len;
 var results = '';
 
+function searchClick() {
+    apiSearch();
+    document.getElementById("query").value = " ";
+}
+
 function apiSearch() {
     var params = {
         "q": $("#query").val(),
@@ -33,9 +38,4 @@ function apiSearch() {
         .fail(function () {
             alert("error");
         });
-}
-
-function Search() {
-    apiSearch();
-    document.getElementById("query").value = " ";
 }
