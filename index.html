@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./style.css">
     <title>Quest Request</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha384-i61gTtaoovXtAbKjo903+O55Jkn2+RtzHtvNez+yI49HAASvznhe9sZyjaSHTau9" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" integrity="sha384-s5lqL1NMu1TdDS/75EsR2IKqj5g2SbplE63nRqwT70/kcm2uFLqKGOCp1phJ2ENd" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
+
+
 
 </head>
 
@@ -16,16 +20,19 @@
 
 
     <h1>Quest Request</h1>
-    <div>
-        <input type="button" id="currentTime" value="currentTime" />
-    </div>
 
     <input type="text" id="query" />
     <div>
-        <button class="button" onclick="searchClick()" value="search" type="button">Search</button>
+        <br />
+        <button class="button" onclick="searchClick()" value="search" >Search</button>
     </div>
-    <div id="searchResults">sr</div>
-    <div id="time">t</div>
+    <br />
+    <div>
+        <button class="button" onclick="currentTimeClick()" value="currentTime">Time</button>
+        
+    </div>
+    <div id="searchResults"></div>
+    <div id="time"></div>
 
 
 </body>

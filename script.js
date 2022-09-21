@@ -6,6 +6,15 @@ function searchClick() {
     document.getElementById("query").value = " ";
 }
 
+function currentTimeClick() {
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+    $('#time').css("visibility", "visible");
+    $('#time').html(time);
+    $('#time').dialog();
+}
+
 function apiSearch() {
     var params = {
         "q": $("#query").val(),
@@ -31,7 +40,7 @@ function apiSearch() {
             }
 
 
-
+            $('#searchResults').css("visibility", "visible");
             $('#searchResults').html(results);
             $('#searchResults').dialog();
         })
