@@ -8,7 +8,18 @@ function searchClick() {
 
 function currentTimeClick() {
     var today = new Date();
-    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var tod = "AM";
+    var hh;
+
+    if (today.getHours() >= 12) {
+        hh = today.getHours() % 12;
+        tod = "PM";
+    }
+    else {
+        hh = today.getHours();
+    }
+
+    var time = hh + ":" + today.getMinutes() + " " + tod;
 
     $('#time').css("visibility", "visible");
     $('#time').html(time);
